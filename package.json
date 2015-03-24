@@ -1,0 +1,32 @@
+{
+  "name": "crunch2docdb",
+  "version": "0.0.1",
+  "description": "Simple example of pulling Crunchbase data and writing it to Document DB for processing within Azure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlefrenzy/node-crunch2docdb.git"
+  },
+  "keywords": [
+    "crunchbase",
+    "docdb",
+    "documentdb",
+    "azure"
+  ],
+  "author": "Michael Lanzetta <milanz@microsoft.com> (http://www.mikelanzetta.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noodlefrenzy/node-crunch2docdb/issues"
+  },
+  "homepage": "https://github.com/noodlefrenzy/node-crunch2docdb",
+  "dependencies": {
+    "crunchbase2": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1"
+  }
+}
