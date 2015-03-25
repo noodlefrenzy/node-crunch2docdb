@@ -2,9 +2,12 @@
   "name": "crunch2docdb",
   "version": "0.0.1",
   "description": "Simple example of pulling Crunchbase data and writing it to Document DB for processing within Azure.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha test"
+    "pretest": "jshint lib",
+    "test": "mocha test",
+    "coverage": "istanbul cover _mocha --report lcovonly -- -t 10000 --ui tdd test",
+    "publishcoverage": "CODECLIMATE_REPO_TOKEN=378310d0e430e52c3885a0ec85f06d3ea048a4caf845ecbdb3d0359dba6308fc codeclimate < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,8 @@
   },
   "devDependencies": {
     "chai": "^2.1.2",
+    "istanbul": "^0.3.11",
+    "jshint": "^2.6.3",
     "mocha": "^2.2.1"
   }
 }
